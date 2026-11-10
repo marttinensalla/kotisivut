@@ -21,7 +21,47 @@
 .reviews .quote::before{content:"“";top:-8px;left:-5px}
 .reviews .quote::after{content:"”";bottom:-30px;right:3px}
 @media(max-width:680px){.brand-mic{width:21px;height:28px}.reviews{padding-top:36px;padding-bottom:43px}.reviews h2{font-size:38px;margin-bottom:16px}.reviews .quote{font-size:19px;line-height:1.33;padding-left:28px;padding-right:27px}.reviews .quote::before,.reviews .quote::after{font-size:60px}.reviews .quote::after{bottom:-25px}}
-.cta-with-mic{display:inline-flex;align-items:center;gap:14px;margin-top:10px;vertical-align:middle}.cta-with-mic .button{margin-top:0}.cta-with-mic .hero-mic{width:67px;height:82px;flex:none;color:var(--teal);transform:rotate(10deg)}@media(max-width:680px){.cta-with-mic{gap:8px}.cta-with-mic .hero-mic{width:52px;height:65px}.contact h2{padding-right:120px}}</style></head><body>
+.cta-with-mic{display:inline-flex;align-items:center;gap:14px;margin-top:10px;vertical-align:middle}.cta-with-mic .button{margin-top:0}.cta-with-mic .hero-mic{width:67px;height:82px;flex:none;color:var(--teal);transform:rotate(10deg)}@media(max-width:680px){.cta-with-mic{gap:8px}.cta-with-mic .hero-mic{width:52px;height:65px}.contact h2{padding-right:120px}}
+/* Palveluiden oma osio: muut sivuston tyylit pidetään ennallaan. */
+.services{background:#f0fafa}
+.services h2{margin-bottom:18px;text-align:left}
+.services-intro{font-size:23px;max-width:930px;margin:0 0 30px}
+.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+.service-card{min-width:0;display:flex;flex-direction:column;gap:0;padding:26px 23px 22px;background:#e9f8f5;border:1px solid #b7e6e1;border-radius:15px}
+.service-illustration{height:124px;display:flex;align-items:center;justify-content:center;margin-bottom:15px;color:#006b73}
+.service-illustration svg{width:151px;height:124px;max-width:100%;display:block;overflow:visible}
+.service-illustration .service-original-mic{width:105px;height:122px}
+.service-card h3{font-family:Anton,Impact,sans-serif;font-size:clamp(25px,2.4vw,32px);line-height:1.15;font-weight:400;margin:0 0 19px;color:#006b73;min-height:2.25em}
+.service-card p,.service-card li{font-size:19px;line-height:1.4;overflow-wrap:break-word}
+.service-card p{margin:0 0 16px}
+.service-card ul{margin:0 0 17px;padding-left:22px}
+.service-card li{padding-left:1px;margin:0 0 6px}
+.service-card li::marker{color:#eb8eae}
+.service-card .service-highlight{margin-top:auto;margin-bottom:0;padding-top:10px;font-weight:500}
+.service-card .service-highlight strong{font-weight:700}
+@media(max-width:1020px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.service-card h3{min-height:0}}
+@media(max-width:700px){.services-intro{font-size:21px}.service-grid{grid-template-columns:1fr;gap:16px}.service-card{padding:23px 21px}.service-illustration{height:114px;margin-bottom:12px}.service-illustration svg{height:114px}.service-card h3{font-size:28px;margin-bottom:15px}.service-card p,.service-card li{font-size:19px}}
+
+/* Yhteydenottolomake: oikealla tietokoneella, tietojen alla mobiilissa. */
+.contact-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.92fr);gap:clamp(26px,4vw,76px);align-items:start}
+.contact-details{min-width:0;padding-top:4px}
+.booking-form{position:relative;z-index:1;min-width:0;margin-top:48px;padding:24px 25px 22px;border:1px solid rgba(188,237,232,.62);border-radius:14px;background:rgba(0,53,60,.24)}
+.booking-form-title{font-family:Anton,Impact,sans-serif;font-size:clamp(24px,2.3vw,30px);margin:0 0 7px;line-height:1.15}
+.booking-form-intro{font-size:17px;line-height:1.35;margin:0 0 18px;color:#e3f7f4}
+.booking-form-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.booking-field{min-width:0;margin-bottom:14px}
+.booking-form label{display:block;font-size:18px;line-height:1.2;font-weight:700;margin-bottom:6px}
+.booking-form input:not([type=hidden]):not([name="_honey"]),.booking-form textarea{width:100%;min-width:0;display:block;border:1px solid #83c9cd;border-radius:7px;background:#fff;color:#143a3c;padding:10px 12px;font:500 18px 'Barlow Condensed',Arial,sans-serif;line-height:1.35;box-sizing:border-box}
+.booking-form input:focus-visible,.booking-form textarea:focus-visible{outline:3px solid #f2aec6;outline-offset:2px}
+.booking-form textarea{min-height:135px;resize:vertical}
+.booking-form textarea::placeholder{color:#50777a;opacity:1}
+.booking-submit{display:inline-block;border:0;border-radius:8px;background:#f6bed2;color:#143a3c;padding:12px 22px;font:700 21px 'Barlow Condensed',Arial,sans-serif;cursor:pointer}
+.booking-submit:hover{background:#ffdaea}
+.booking-submit:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.booking-privacy{font-size:15px;line-height:1.35;color:#dcf2f0;margin:14px 0 0}
+@media(max-width:1020px){.contact-content{grid-template-columns:1fr;gap:20px}.booking-form{margin-top:6px;max-width:600px}}
+@media(max-width:520px){.booking-form{padding:20px 16px}.booking-form-row{grid-template-columns:1fr;gap:0}.booking-form-title{font-size:26px}.booking-form label{font-size:18px}.booking-form input:not([type=hidden]):not([name="_honey"]),.booking-form textarea{font-size:18px}}
+</style></head><body>
 <header><nav><a class="brand" href="#alku">SALLA MARTTINEN <svg style="fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round" aria-hidden="true" class="brand-mic" viewBox="0 0 140 174">
 <!-- Käsivaraisen esiintymismikrofonin ritilä, kaulus ja varsi -->
 <path d="M42 22 Q52 8 70 11 Q91 13 99 30 Q107 48 91 66 Q83 76 72 78 Q53 80 39 65 Q25 48 31 34 Q35 26 42 22Z"></path>
@@ -32,7 +72,7 @@
 <path d="M64 99 L76 98 M69 139 L79 138" stroke-width="1.5"></path>
 <path d="M49 9 l-5 -6 M109 27 l8 -5 M24 79 l-9 3" stroke-width="1.3"></path>
 </svg></a><div class="links"><a href="#esittely">Kuka?</a><a href="#keikat">Keikat</a><a href="#videot">Videot</a><a href="#palautteet">Palautteet</a><a href="#yhteys">Yhteys</a></div></nav></header>
-<main><section class="hero" id="alku"><div class="hero-copy"><h1>Salla <span>Marttinen</span></h1><p>Salla on mikkeliläinen koomikko, ikuista kolmenkympin kriisiä elävä äiti-ihminen ja millenniaali, jonka mielen vuoristoradasta jarrumies on pudonnut kyydistä jo aikoja sitten.</p><div class="cta-with-mic"><a class="button" href="#yhteys">Pyydä keikalle</a><svg style="fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round" aria-hidden="true" class="hero-mic" viewbox="0 0 140 174">
+<main><section class="hero" id="alku"><div class="hero-copy"><h1>Salla <span>Marttinen</span></h1><p>Salla on mikkeliläinen stand up -koomikko, esiintyjä, juontaja, ikuista kolmenkympin kriisiä elävä äiti-ihminen ja millenniaali, jonka mielen vuoristoradasta jarrumies on pudonnut kyydistä jo aikoja sitten.</p><div class="cta-with-mic"><a class="button" href="#yhteys">Pyydä keikalle</a><svg style="fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round" aria-hidden="true" class="hero-mic" viewbox="0 0 140 174">
 <!-- Käsivaraisen esiintymismikrofonin ritilä, kaulus ja varsi -->
 <path d="M42 22 Q52 8 70 11 Q91 13 99 30 Q107 48 91 66 Q83 76 72 78 Q53 80 39 65 Q25 48 31 34 Q35 26 42 22Z"></path>
 <path d="M37 32 Q68 27 100 37 M32 43 Q66 39 101 48 M36 54 Q66 52 95 59 M45 65 Q69 63 86 68" stroke-width="1.7"></path>
@@ -42,7 +82,72 @@
 <path d="M64 99 L76 98 M69 139 L79 138" stroke-width="1.5"></path>
 <path d="M49 9 l-5 -6 M109 27 l8 -5 M24 79 l-9 3" stroke-width="1.3"></path>
 </svg></div><div class="decor s1"><svg aria-hidden="true" viewBox="0 0 50 50"><path d="M25 2 Q26 19 29 22 Q33 25 48 26 Q31 27 28 31 Q25 36 24 48 Q23 34 19 30 Q16 27 2 25 Q17 24 20 20 Q24 15 25 2Z"/></svg></div><div class="decor s2"><svg aria-hidden="true" viewBox="0 0 50 50"><path d="M25 2 Q26 19 29 22 Q33 25 48 26 Q31 27 28 31 Q25 36 24 48 Q23 34 19 30 Q16 27 2 25 Q17 24 20 20 Q24 15 25 2Z"/></svg></div><div class="decor s3"><svg aria-hidden="true" viewBox="0 0 50 50"><path d="M25 2 Q26 19 29 22 Q33 25 48 26 Q31 27 28 31 Q25 36 24 48 Q23 34 19 30 Q16 27 2 25 Q17 24 20 20 Q24 15 25 2Z"/></svg></div></div><div class="portrait-side"><div class="portrait-frame"><img class="portrait" src="paakuva.webp" width="720" height="720" alt="Salla Marttinen hymyilee sinisessä paidassa"></div></div></section>
-<section class="section about" id="esittely"><div class="about-intro"><h2>Kuka?</h2><div class="about-round-frame"><img class="about-round" src="kuka-kuva.webp" width="820" height="820" alt="Salla Marttinen seisoo vaaleanpunaisessa paidassa" loading="lazy"></div></div><div class="body"><p>Salla on koulutettu ja varma esiintyjä, joka ottaa huoneen ja tilanteen haltuun niin, että yleisön ei tarvitse kuin nauttia kyydistä. Muuntautumiskykyinen ja tilannetta sekä yleisöä herkällä korvalla aistiva Salla on erinomainen valinta myös esimerkiksi seremoniamestariksi ja juontajaksi.</p><p>Sallan komiikassa suunnistetaan ruuhkavuosien ytimessä ja poiketaan tasaisin väliajoin sopivan kyseenalaisille sivupoluille. Tunteet tunnetaan ja näytetään isosti niitä sen suuremmin sensuroimatta ja sekös vasta hauskaa on!</p><p>Vaikka Salla on komiikan saralla tuore tuttavuus, hän on ehtinyt jo paljon. Hänet on vuosien varrella nähty useilla kotimaisilla komiikkafestivaaleilla, arvostetussa Vuoden tulokas-kutsuvieraskilpailussa finalistina sekä Stand up Klubi-ohjelmassa (Nelonen) vuonna 2026.</p><p>Komiikan lisäksi Salla näyttelee mielellään niin teatterissa kuin kameran edessä, sekä ohjaa ja opettaa muun muassa improvisaatiota. Koulutukseltaan Salla on teatteri-ilmaisun ohjaaja AMK.</p></div><div class="decor s4"><svg aria-hidden="true" viewBox="0 0 50 50"><path d="M25 2 Q26 19 29 22 Q33 25 48 26 Q31 27 28 31 Q25 36 24 48 Q23 34 19 30 Q16 27 2 25 Q17 24 20 20 Q24 15 25 2Z"/></svg></div><div class="decor s5"><svg aria-hidden="true" viewBox="0 0 50 50"><path d="M25 2 Q26 19 29 22 Q33 25 48 26 Q31 27 28 31 Q25 36 24 48 Q23 34 19 30 Q16 27 2 25 Q17 24 20 20 Q24 15 25 2Z"/></svg></div><div class="decor s7"><svg aria-hidden="true" viewBox="0 0 50 50"><path d="M25 2 Q26 19 29 22 Q33 25 48 26 Q31 27 28 31 Q25 36 24 48 Q23 34 19 30 Q16 27 2 25 Q17 24 20 20 Q24 15 25 2Z"/></svg></div></section>
+<section class="section about" id="esittely"><div class="about-intro"><h2>Kuka?</h2><div class="about-round-frame"><img class="about-round" src="kuka-kuva.webp" width="820" height="820" alt="Salla Marttinen seisoo vaaleanpunaisessa paidassa" loading="lazy"></div></div><div class="body"><p>Salla on koulutettu (teatteri-ilmaisun ohjaaja AMK) ja kokenut esiintyjä, joka ottaa vaivatta huoneen ja tilanteen haltuun niin, että yleisön ei tarvitse kuin nauttia kyydistä. Esiintyjänä Sallan erityisvahvuuksia ovat kyky innostua ja innostaa sekä taito toimia myös yllättävissä tilanteissa.</p><p>Komiikan maailmassa Salla suunnistaa ruuhkavuosien ytimessä ja poikkeaa tasaisin väliajoin sopivan kyseenalaisille sivupoluille. Tunteet tunnetaan ja näytetään isosti niitä sen suuremmin sensuroimatta ja sekös vasta hauskaa on!</p><p>Vaikka Salla on koomikkona vielä tuore tuttavuus, hän on ehtinyt jo paljon. Hänet on vuosien varrella nähty useilla kotimaisilla komiikkafestivaaleilla, arvostetun Vuoden Stand Up Tulokas -kutsuvieraskilpailun finalistina vuonna 2024 sekä Stand up Klubi -ohjelmassa (Nelonen) vuonna 2026.</p></div><div class="decor s4"><svg aria-hidden="true" viewBox="0 0 50 50"><path d="M25 2 Q26 19 29 22 Q33 25 48 26 Q31 27 28 31 Q25 36 24 48 Q23 34 19 30 Q16 27 2 25 Q17 24 20 20 Q24 15 25 2Z"/></svg></div><div class="decor s5"><svg aria-hidden="true" viewBox="0 0 50 50"><path d="M25 2 Q26 19 29 22 Q33 25 48 26 Q31 27 28 31 Q25 36 24 48 Q23 34 19 30 Q16 27 2 25 Q17 24 20 20 Q24 15 25 2Z"/></svg></div><div class="decor s7"><svg aria-hidden="true" viewBox="0 0 50 50"><path d="M25 2 Q26 19 29 22 Q33 25 48 26 Q31 27 28 31 Q25 36 24 48 Q23 34 19 30 Q16 27 2 25 Q17 24 20 20 Q24 15 25 2Z"/></svg></div></section>
+<section class="section services" id="palvelut" aria-labelledby="mita-otsikko">
+  <h2 id="mita-otsikko">Mitä?</h2>
+  <p class="services-intro">Salla on erinomainen valinta silloin, kun tilaisuuteen kaivataan naurua, viihdettä ja varmaa esiintyjää!</p>
+  <div class="service-grid">
+    <article class="service-card">
+      <div class="service-illustration" aria-hidden="true"><svg aria-hidden="true" class="mic-doodle service-original-mic" style="fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round" viewbox="0 0 140 174">
+<!-- Käsivaraisen esiintymismikrofonin ritilä, kaulus ja varsi -->
+<path d="M42 22 Q52 8 70 11 Q91 13 99 30 Q107 48 91 66 Q83 76 72 78 Q53 80 39 65 Q25 48 31 34 Q35 26 42 22Z"></path>
+<path d="M37 32 Q68 27 100 37 M32 43 Q66 39 101 48 M36 54 Q66 52 95 59 M45 65 Q69 63 86 68" stroke-width="1.7"></path>
+<path d="M48 19 Q52 47 70 75 M62 12 Q66 43 82 71 M80 16 Q81 42 91 60" stroke-width="1.3"></path>
+<path d="M55 79 Q68 86 82 77 L85 87 Q71 97 55 88 Z"></path>
+<path d="M60 91 L69 153 Q75 161 81 151 L80 92"></path>
+<path d="M64 99 L76 98 M69 139 L79 138" stroke-width="1.5"></path>
+<path d="M49 9 l-5 -6 M109 27 l8 -5 M24 79 l-9 3" stroke-width="1.3"></path>
+</svg></div>
+      <h3>Stand up -koomikko</h3>
+      <p>Stand up -esitys yritysjuhliin, pikkujouluihin, yksityistilaisuuksiin ja erilaisiin tapahtumiin. Soveltuu niin pienille kuin suurillekin lavoille!</p>
+      <p>Koomikkona Salla huolehtii, että yleisöllä on hauskaa. Esitykseen voidaan pyynnöstä myös sisällyttää juuri teidän porukallenne tuttuja aiheita ja tilanteita.</p>
+      <p class="service-highlight"><strong>Esityksen kesto:</strong> noin 20–30 minuuttia.</p>
+    </article>
+    <article class="service-card">
+      <div class="service-illustration" aria-hidden="true"><svg viewBox="0 0 172 146" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+ <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M32 24 Q27 24 27 31 L30 125 Q30 132 37 132 L120 129 Q126 128 125 120 L122 31 Q122 25 115 25 L104 25"/>
+  <path d="M51 24 L41 24 Q38 24 38 30 L40 118 Q40 121 44 121 L111 119" stroke-width="1.6"/>
+  <path d="M58 20 L67 20 Q67 8 79 9 Q90 9 90 20 L99 20 Q103 21 102 26 L101 33 L57 34 Z"/>
+  <path d="M54 51 l5 6 10 -14 M54 74 l5 6 10 -14 M54 97 l5 6 10 -14" stroke="#eb8eae" stroke-width="2.0"/>
+  <path d="M78 49 L108 47 M78 73 L108 71 M78 96 L105 94"/>
+  <path d="M136 76 Q149 65 154 83 Q158 96 145 104 Q128 111 126 96 Q124 84 136 76 Z"/>
+  <path d="M133 81 q8 1 18 2 M130 88 q12 0 23 1 M133 96 q9 0 17 -2" stroke-width="1.7"/>
+  <path d="M139 107 L145 128 Q149 132 151 126 L150 103"/>
+  <path d="M17 57 l-9 -4 M16 69 l-9 1 M155 23 l7 -8" stroke="#eb8eae"/>
+ </g>
+</svg></div>
+      <h3>Juontaja ja seremoniamestari</h3>
+      <p>Tarvitsetko tapahtumaasi juontajan muutamaksi tunniksi tai vaikka koko päiväksi?</p>
+      <p>Salla kuljettaa tilaisuutta eteenpäin rennolla otteella, huumoria unohtamatta ja tilanteen vaatiman arvokkuuden säilyttäen.</p>
+      <p>Juontojen lisäksi tehtäviin voidaan sopia kuuluvaksi esimerkiksi käsikirjoittamista ja aikataulusta huolehtimista.</p>
+      <p class="service-highlight"><strong>Myös juontamisen ja stand up -esityksen yhdistäminen onnistuu!</strong></p>
+    </article>
+    <article class="service-card">
+      <div class="service-illustration" aria-hidden="true"><svg viewBox="0 0 172 146" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+ <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M24 29 L100 16 Q106 16 107 23 L119 111 Q120 118 112 120 L37 133 Q31 133 30 126 Z"/>
+  <path d="M33 51 L111 37 M38 75 L114 61 M41 96 L117 85 M58 44 L71 123 M83 40 L97 118" stroke-width="2.1"/>
+  <path d="M40 34 Q47 24 53 31 Q60 21 66 27 Q71 36 55 45 Q48 42 40 34Z" stroke="#eb8eae" stroke-width="1.6"/>
+  <path d="M45 111 l10 -13 M46 98 l10 14" stroke="#eb8eae" stroke-width="1.6"/>
+  <path d="M130 51 Q138 39 148 48 Q164 59 160 84 Q159 110 140 117 Q128 106 127 91 Q122 65 130 51Z"/>
+  <path d="M132 70 q5 -5 9 1 M149 71 q4 -4 7 0 M135 93 q10 10 19 -2" stroke-width="1.9"/>
+  <path d="M16 41 l-8 -5 M15 52 l-9 1 M157 20 l4 -10 M164 34 l6 -2" stroke="#eb8eae"/>
+ </g>
+</svg></div>
+      <h3>Muuta ohjelmaa</h3>
+      <p>Kaipaatko juhliin tai tapahtumaan jotain vähän erilaista?</p>
+      <p>Sallan voi tilata vetämään myös erilaisia ohjelmanumeroita, kuten:</p>
+      <ul>
+        <li>Juuri teille räätälöity bingo</li>
+        <li>Improvisaatiotyöpaja</li>
+        <li>Pihaleikit ja muut yhteiset leikilliset ohjelmanumerot, kuten vaikka ihmissusipeli</li>
+      </ul>
+      <p>Olipa kyseessä pikkujoulut, synttärit, polttarit tai yrityksen virkistyspäivä, ohjelma voidaan suunnitella juuri teidän porukallenne sopivaksi.</p>
+      <p class="service-highlight"><strong>Vai onko mielessä jotain ihan muuta? Ota yhteyttä ja katsotaan, mitä keksitään!</strong></p>
+    </article>
+  </div>
+</section>
 <section class="section events" id="keikat"><div class="section-heading"><h2>Tulevat keikat</h2><div class="doodle"><svg style="fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round" aria-hidden="true" class="mic-doodle" viewbox="0 0 140 174">
 <!-- Käsivaraisen esiintymismikrofonin ritilä, kaulus ja varsi -->
 <path d="M42 22 Q52 8 70 11 Q91 13 99 30 Q107 48 91 66 Q83 76 72 78 Q53 80 39 65 Q25 48 31 34 Q35 26 42 22Z"></path>
@@ -57,7 +162,25 @@
 <section class="section reviews" id="palautteet"><div class="feedback-heading"><h2>Keikkapalautteita</h2><div class="feedback-doodles"><svg class="smile-doodle" aria-hidden="true" viewBox="0 0 90 76"><g fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19q-1 2 0 5 M53 19q-1 2 0 5"/><path d="M10 44 C25 63 48 65 64 44"/></g></svg><svg class="heart-doodle" aria-hidden="true" viewBox="0 0 70 70"><path d="M35 60 C24 51 8 40 8 24 C8 12 22 8 31 20 L35 25 C46 7 62 12 63 25 C64 39 46 54 35 60 Z" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div><blockquote class="quote">Olet todella hauska esiintyjä, ja sisältö oli juuri sopiva meidän illan tunnelmaan ja porukalle. Juttusi saivat koko porukan nauramaan ja hyvän fiiliksen iltaan.
 
 Esiintymisesi oli juuri sitä, mitä virkistysiltaan toivoimmekin. Voimme lämpimästi suositella sinua myös muille tapahtumajärjestäjille. Kiitos, että olit mukana järjestämässä meidän illasta onnistunutta ja ikimuistoista!</blockquote><div class="decor s5"><svg aria-hidden="true" viewBox="0 0 50 50"><path d="M25 2 Q26 19 29 22 Q33 25 48 26 Q31 27 28 31 Q25 36 24 48 Q23 34 19 30 Q16 27 2 25 Q17 24 20 20 Q24 15 25 2Z"/></svg></div></section>
-<section class="section contact" id="yhteys"><h2>Pyydä keikalle</h2><div class="envelope"><svg aria-hidden="true" viewBox="0 0 140 110"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 27Q12 20 21 20L120 18Q130 18 130 29L129 91Q128 98 118 98L23 96Q11 95 11 86Z"/><path d="M14 27Q46 54 68 68Q72 70 78 66L128 26"/><path d="M14 91l40-37M126 91L88 57"/></g></svg></div><p>Yhteydenotot ja buukkaukset<span class="contact-heart" aria-hidden="true"><svg viewBox="0 0 70 70"><path d="M35 60 C24 51 8 40 8 24 C8 12 22 8 31 20 L35 25 C46 7 62 12 63 25 C64 39 46 54 35 60 Z" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></p><a class="email" href="mailto:sallamariasillanpaa@gmail.com">sallamariasillanpaa@gmail.com</a><p class="social-note"><a class="insta-doodle" href="https://www.instagram.com/marttinensalla?srtk=ZnhodDRhamdzc3pq" target="_blank" rel="noopener noreferrer" aria-label="Seuraa Salla Marttista Instagramissa"><svg aria-hidden="true" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 9c-5 1-8 5-9 10-1 8-1 18 0 26 1 5 4 9 9 10 8 1 18 1 26 0 5-1 9-5 10-10 1-8 1-18 0-26-1-5-5-9-10-10-8-1-18-1-26 0Z"/><path d="M23 32c0-5 4-9 9-9s9 4 9 9-4 9-9 9-9-4-9-9Z"/><path d="M46.5 18.5h.2"/></g></svg><span>Seuraa somessa!</span></a></p><div class="decor s10"><svg aria-hidden="true" viewBox="0 0 50 50"><path d="M25 2 Q26 19 29 22 Q33 25 48 26 Q31 27 28 31 Q25 36 24 48 Q23 34 19 30 Q16 27 2 25 Q17 24 20 20 Q24 15 25 2Z"/></svg></div><div class="decor s11"><svg aria-hidden="true" viewBox="0 0 50 50"><path d="M25 2 Q26 19 29 22 Q33 25 48 26 Q31 27 28 31 Q25 36 24 48 Q23 34 19 30 Q16 27 2 25 Q17 24 20 20 Q24 15 25 2Z"/></svg></div></section></main>
+<section class="section contact" id="yhteys"><h2>Pyydä keikalle</h2><div class="envelope"><svg aria-hidden="true" viewBox="0 0 140 110"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 27Q12 20 21 20L120 18Q130 18 130 29L129 91Q128 98 118 98L23 96Q11 95 11 86Z"/><path d="M14 27Q46 54 68 68Q72 70 78 66L128 26"/><path d="M14 91l40-37M126 91L88 57"/></g></svg></div><div class="contact-content"><div class="contact-details"><p>Yhteydenotot ja buukkaukset<span class="contact-heart" aria-hidden="true"><svg viewBox="0 0 70 70"><path d="M35 60 C24 51 8 40 8 24 C8 12 22 8 31 20 L35 25 C46 7 62 12 63 25 C64 39 46 54 35 60 Z" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></p><a class="email" href="mailto:sallamariasillanpaa@gmail.com">sallamariasillanpaa@gmail.com</a><p class="social-note"><a class="insta-doodle" href="https://www.instagram.com/marttinensalla?srtk=ZnhodDRhamdzc3pq" target="_blank" rel="noopener noreferrer" aria-label="Seuraa Salla Marttista Instagramissa"><svg aria-hidden="true" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 9c-5 1-8 5-9 10-1 8-1 18 0 26 1 5 4 9 9 10 8 1 18 1 26 0 5-1 9-5 10-10 1-8 1-18 0-26-1-5-5-9-10-10-8-1-18-1-26 0Z"/><path d="M23 32c0-5 4-9 9-9s9 4 9 9-4 9-9 9-9-4-9-9Z"/><path d="M46.5 18.5h.2"/></g></svg><span>Seuraa somessa!</span></a></p></div><form class="booking-form" action="https://formsubmit.co/sallamariasillanpaa@gmail.com" method="POST" accept-charset="UTF-8">
+  <p class="booking-form-title">Kerro tapahtumastasi!</p>
+  <p class="booking-form-intro">Täytä tiedot, niin palaan asiaan sähköpostitse. <span aria-hidden="true">*</span> merkityt kentät ovat pakollisia.</p>
+  <input type="hidden" name="_subject" value="Uusi keikkatiedustelu – sallamarttinen.fi">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_url" value="https://sallamarttinen.fi/">
+  <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+  <div class="booking-form-row">
+    <div class="booking-field"><label for="booking-name">Nimi <span aria-hidden="true">*</span></label><input type="text" id="booking-name" name="Nimi" autocomplete="name" maxlength="120" required></div>
+    <div class="booking-field"><label for="booking-email">Sähköpostiosoite <span aria-hidden="true">*</span></label><input type="email" id="booking-email" name="email" autocomplete="email" maxlength="180" required></div>
+  </div>
+  <div class="booking-form-row">
+    <div class="booking-field"><label for="booking-company">Yritys</label><input type="text" id="booking-company" name="Yritys" autocomplete="organization" maxlength="160"></div>
+    <div class="booking-field"><label for="booking-phone">Puhelinnumero</label><input type="tel" id="booking-phone" name="Puhelinnumero" autocomplete="tel" maxlength="40"></div>
+  </div>
+  <div class="booking-field"><label for="booking-message">Tapahtuman tiedot <span aria-hidden="true">*</span></label><textarea id="booking-message" name="Tapahtuman tiedot" rows="5" maxlength="4000" placeholder="Minne ja milloin toivot esiintymistä tai ohjelmanumeroa? Millainen tilaisuus on kyseessä?" required></textarea></div>
+  <button type="submit" class="booking-submit">Lähetä yhteydenotto</button>
+  <p class="booking-privacy">Viestin tiedot välitetään sähköpostiini ulkoisen FormSubmit-palvelun kautta. Voit myös kirjoittaa suoraan yllä olevaan sähköpostiosoitteeseen.</p>
+</form></div><div class="decor s10"><svg aria-hidden="true" viewBox="0 0 50 50"><path d="M25 2 Q26 19 29 22 Q33 25 48 26 Q31 27 28 31 Q25 36 24 48 Q23 34 19 30 Q16 27 2 25 Q17 24 20 20 Q24 15 25 2Z"/></svg></div><div class="decor s11"><svg aria-hidden="true" viewBox="0 0 50 50"><path d="M25 2 Q26 19 29 22 Q33 25 48 26 Q31 27 28 31 Q25 36 24 48 Q23 34 19 30 Q16 27 2 25 Q17 24 20 20 Q24 15 25 2Z"/></svg></div></section></main>
 <footer><span>© Salla Marttinen</span><a class="social" href="https://www.instagram.com/marttinensalla/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><span>Kuvat: Pihla Liukkonen</span></footer>
 <script>
 // Vain tulevat keikat näytetään. Itse Google Sheets -taulukkoon ei ole näkyvää linkkiä.
